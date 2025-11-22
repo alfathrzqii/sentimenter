@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+
+{% block title %}Dashboard Sentimen{% endblock %}
+
+<!-- TAMBAHKAN BLOCK INI untuk mengisi H1 yang sudah diperbaiki -->
+{% block page_title %}Dashboard Sentimen{% endblock %}
+
+{% block content %}
+    <p style="font-size: 1.1em; margin-top: -1rem; margin-bottom: 2rem;">
+        Halaman ini menampilkan contoh visualisasi sentimen untuk beberapa topik populer (data dummy).
+    </p>
+
+    <div class="dummy-analysis-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+        
+        {% for key, data in dummy_charts.items() %}
+        <div class="card">
+            <!-- Hapus padding bawaan dari .card untuk style header ini -->
+            <div style="padding: 20px; background-color: #f9f9f9; border-bottom: 1px solid var(--border-color); margin: -30px -30px 20px -30px; border-radius: 10px 10px 0 0;">
+                <h2 style="margin: 0; padding: 0; border: none; font-size: 1.3rem;">{{ data.title }}</h2>
+            </div>
+            
+            <p>Visualisasi sentimen untuk topik ini akan ditampilkan di sini.</p>
+            
+            <!-- Placeholder untuk Gambar -->
+            <div class="chart-placeholder" style="
+                background-color: #e9ecef; 
+                height: 200px; 
+                margin-bottom: 15px; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                color: #6c757d; 
+                font-style: italic;
+                border-radius: var(--border-radius-sm);
+            ">
+                Grafik Sentimen Placeholder
+            </div>
+
+            <p style="font-size: 0.9em; color: #777; margin-bottom: 0;">
+                Data ini adalah contoh. Untuk analisis real-time, kunjungi halaman <a href="{{ url_for('analysis') }}">Analisis</a>.
+            </p>
+        </div>
+        {% endfor %}
+
+    </div>
+{% endblock %}

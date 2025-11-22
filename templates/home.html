@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block page_title %}{% endblock %} <!-- Kosongkan default title, kita gunakan Hero section -->
+
+{% block content %}
+    <!-- Hero Section -->
+    <div style="text-align: center; padding: 60px 20px; margin-bottom: 40px; background: linear-gradient(180deg, rgba(52,152,219,0.05) 0%, rgba(255,255,255,0) 100%); border-radius: 20px;">
+        <h1 style="font-size: 3.5rem; margin-bottom: 20px; background: -webkit-linear-gradient(#2980b9, #3498db); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            Sentimenter AI
+        </h1>
+        <p style="font-size: 1.3rem; max-width: 700px; margin: 0 auto 40px auto; color: #7f8c8d;">
+            Pahami emosi di balik kata-kata dengan kekuatan Artificial Intelligence. 
+            Analisis ulasan pelanggan, komentar media sosial, dan dokumen teks secara instan.
+        </p>
+        <a href="{{ url_for('analysis') }}" class="btn btn-primary" style="padding: 16px 40px; font-size: 1.1rem; border-radius: 50px;">
+            Mulai Analisis <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+        </a>
+    </div>
+
+    <!-- Features Grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+        
+        <div class="card" style="text-align: center;">
+            <div style="width: 60px; height: 60px; background: rgba(52, 152, 219, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto;">
+                <i class="fas fa-bolt" style="font-size: 1.5rem; color: #3498db;"></i>
+            </div>
+            <h3>Cepat & Akurat</h3>
+            <p>Didukung oleh model IndoBERT yang telah dilatih khusus untuk memahami konteks bahasa Indonesia, termasuk bahasa gaul.</p>
+        </div>
+
+        <div class="card" style="text-align: center;">
+            <div style="width: 60px; height: 60px; background: rgba(46, 204, 113, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto;">
+                <i class="fas fa-layer-group" style="font-size: 1.5rem; color: #2ecc71;"></i>
+            </div>
+            <h3>Analisis Massal</h3>
+            <p>Hemat waktu dengan mengunggah file CSV atau Excel. Proses ribuan baris data hanya dalam sekali klik.</p>
+        </div>
+
+        <div class="card" style="text-align: center;">
+            <div style="width: 60px; height: 60px; background: rgba(231, 76, 60, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto;">
+                <i class="fas fa-chart-bar" style="font-size: 1.5rem; color: #e74c3c;"></i>
+            </div>
+            <h3>Visualisasi Data</h3>
+            <p>Dapatkan wawasan mendalam melalui grafik interaktif dan Word Cloud yang estetis dan mudah dipahami.</p>
+        </div>
+
+    </div>
+{% endblock %}

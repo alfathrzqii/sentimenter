@@ -1,0 +1,2298 @@
+2025-11-18 08:58:43,020 WARNING:  * Debugger is active!
+2025-11-18 08:58:43,026 INFO:  * Debugger PIN: 127-533-719
+2025-11-18 08:59:18,833 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 24, in template
+    {% endblock %}
+    ^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+
+2025-11-18 08:59:18,835 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 24, in template
+    {% endblock %}
+    ^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+
+2025-11-18 08:59:18,839 ERROR: Exception on /analysis [GET]
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 24, in template
+    {% endblock %}
+    ^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 24, in template
+    {% endblock %}
+    ^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2025-11-18 08:59:18,859 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 24, in template
+    {% endblock %}
+    ^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 24, in template
+    {% endblock %}
+    ^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+
+2025-11-18 08:59:18,861 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 24, in template
+    {% endblock %}
+    ^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 24, in template
+    {% endblock %}
+    ^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+
+2025-11-18 09:01:32,454 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:01:32,456 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:01:32,461 ERROR: Exception on /analysis [GET]
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+2025-11-18 09:01:32,480 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:01:32,482 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:01:49,890 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:01:49,891 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:01:49,896 ERROR: Exception on /analysis [GET]
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+2025-11-18 09:01:49,912 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:01:49,913 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:03:12,497 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:03:12,498 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:03:12,504 ERROR: Exception on /analysis [GET]
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+2025-11-18 09:03:12,519 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:03:12,520 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:04:22,069 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 09:04:22,070 INFO: [33mPress CTRL+C to quit[0m
+2025-11-18 09:04:33,196 INFO: 127.0.0.1 - - [18/Nov/2025 09:04:33] "GET / HTTP/1.1" 200 -
+2025-11-18 09:04:33,470 INFO: 127.0.0.1 - - [18/Nov/2025 09:04:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 09:04:35,899 INFO: 127.0.0.1 - - [18/Nov/2025 09:04:35] "GET /dashboard HTTP/1.1" 200 -
+2025-11-18 09:04:36,024 INFO: 127.0.0.1 - - [18/Nov/2025 09:04:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 09:04:37,294 INFO: 127.0.0.1 - - [18/Nov/2025 09:04:37] "GET /about HTTP/1.1" 200 -
+2025-11-18 09:04:37,400 INFO: 127.0.0.1 - - [18/Nov/2025 09:04:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 09:04:38,447 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:04:38,448 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:04:38,455 ERROR: Exception on /analysis [GET]
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+2025-11-18 09:04:38,477 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:04:38,479 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:04:38,486 INFO: 127.0.0.1 - - [18/Nov/2025 09:04:38] "[35m[1mGET /analysis HTTP/1.1[0m" 500 -
+2025-11-18 09:04:38,580 ERROR: Error on request:
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 860, in handle_exception
+    server_error = self.ensure_sync(handler)(server_error)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+2025-11-18 09:09:44,775 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 09:09:44,776 INFO: [33mPress CTRL+C to quit[0m
+2025-11-18 09:09:51,525 INFO: 127.0.0.1 - - [18/Nov/2025 09:09:51] "GET / HTTP/1.1" 200 -
+2025-11-18 09:09:51,752 INFO: 127.0.0.1 - - [18/Nov/2025 09:09:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 09:10:01,286 INFO: 127.0.0.1 - - [18/Nov/2025 09:10:01] "GET /dashboard HTTP/1.1" 200 -
+2025-11-18 09:10:01,546 INFO: 127.0.0.1 - - [18/Nov/2025 09:10:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 09:10:04,255 INFO: 127.0.0.1 - - [18/Nov/2025 09:10:04] "GET /about HTTP/1.1" 200 -
+2025-11-18 09:10:04,947 INFO: 127.0.0.1 - - [18/Nov/2025 09:10:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 09:10:08,276 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:10:08,277 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:10:08,284 ERROR: Exception on /analysis [GET]
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+2025-11-18 09:10:08,305 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:10:08,308 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+                           prediction=prediction_result,
+    ...<2 lines>...
+                           results_table=results_table,
+                           wordcloud=wordcloud)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+2025-11-18 09:10:08,319 INFO: 127.0.0.1 - - [18/Nov/2025 09:10:08] "[35m[1mGET /analysis HTTP/1.1[0m" 500 -
+2025-11-18 09:10:08,354 ERROR: Error on request:
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 137, in analysis
+    return render_template('analysis.html',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 809, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 860, in handle_exception
+    server_error = self.ensure_sync(handler)(server_error)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\app.py", line 164, in handle_unexpected_error
+    return render_template('analysis.html', prediction=None, text='', sentiment_counts=None, results_table=None, wordcloud=None), 500
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\templates\analysis.html", line 76, in template
+    <!-- PERIKSA DI SINI: Pastikan {% if %} dan {% endif %} ini ada -->
+    ^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Expected an expression, got 'end of statement block'
+2025-11-18 09:14:40,122 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 09:14:40,123 INFO: [33mPress CTRL+C to quit[0m
+2025-11-18 09:15:13,717 INFO: 127.0.0.1 - - [18/Nov/2025 09:15:13] "GET / HTTP/1.1" 200 -
+2025-11-18 09:15:13,962 INFO: 127.0.0.1 - - [18/Nov/2025 09:15:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 09:15:17,201 INFO: 127.0.0.1 - - [18/Nov/2025 09:15:17] "GET /dashboard HTTP/1.1" 200 -
+2025-11-18 09:15:17,299 INFO: 127.0.0.1 - - [18/Nov/2025 09:15:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 09:15:20,484 INFO: 127.0.0.1 - - [18/Nov/2025 09:15:20] "GET /about HTTP/1.1" 200 -
+2025-11-18 09:15:20,566 INFO: 127.0.0.1 - - [18/Nov/2025 09:15:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 09:15:25,846 INFO: 127.0.0.1 - - [18/Nov/2025 09:15:25] "GET /analysis HTTP/1.1" 200 -
+2025-11-18 09:15:25,919 INFO: 127.0.0.1 - - [18/Nov/2025 09:15:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 09:15:45,495 INFO: 127.0.0.1 - - [18/Nov/2025 09:15:45] "POST /analysis HTTP/1.1" 200 -
+2025-11-18 09:15:45,582 INFO: 127.0.0.1 - - [18/Nov/2025 09:15:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 10:07:58,870 INFO: 127.0.0.1 - - [18/Nov/2025 10:07:58] "GET / HTTP/1.1" 200 -
+2025-11-18 10:07:59,032 INFO: 127.0.0.1 - - [18/Nov/2025 10:07:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 10:08:12,608 INFO: 127.0.0.1 - - [18/Nov/2025 10:08:12] "GET /dashboard HTTP/1.1" 200 -
+2025-11-18 10:08:12,740 INFO: 127.0.0.1 - - [18/Nov/2025 10:08:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 10:08:15,787 INFO: 127.0.0.1 - - [18/Nov/2025 10:08:15] "GET /about HTTP/1.1" 200 -
+2025-11-18 10:08:15,843 INFO: 127.0.0.1 - - [18/Nov/2025 10:08:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 10:08:18,835 INFO: 127.0.0.1 - - [18/Nov/2025 10:08:18] "GET /analysis HTTP/1.1" 200 -
+2025-11-18 10:08:18,957 INFO: 127.0.0.1 - - [18/Nov/2025 10:08:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 10:08:22,270 INFO: 127.0.0.1 - - [18/Nov/2025 10:08:22] "GET / HTTP/1.1" 200 -
+2025-11-18 10:08:22,355 INFO: 127.0.0.1 - - [18/Nov/2025 10:08:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 11:13:42,774 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 11:13:42,775 INFO: [33mPress CTRL+C to quit[0m
+2025-11-18 11:13:47,959 INFO: 127.0.0.1 - - [18/Nov/2025 11:13:47] "GET / HTTP/1.1" 200 -
+2025-11-18 11:13:48,190 INFO: 127.0.0.1 - - [18/Nov/2025 11:13:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 11:13:50,089 INFO: 127.0.0.1 - - [18/Nov/2025 11:13:50] "GET /dashboard HTTP/1.1" 200 -
+2025-11-18 11:13:50,168 INFO: 127.0.0.1 - - [18/Nov/2025 11:13:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 11:13:51,950 INFO: 127.0.0.1 - - [18/Nov/2025 11:13:51] "GET /analysis HTTP/1.1" 200 -
+2025-11-18 11:13:52,146 INFO: 127.0.0.1 - - [18/Nov/2025 11:13:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 11:14:02,757 INFO: 127.0.0.1 - - [18/Nov/2025 11:14:02] "GET /about HTTP/1.1" 200 -
+2025-11-18 11:14:02,848 INFO: 127.0.0.1 - - [18/Nov/2025 11:14:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 11:14:04,800 INFO: 127.0.0.1 - - [18/Nov/2025 11:14:04] "GET /analysis HTTP/1.1" 200 -
+2025-11-18 11:14:04,914 INFO: 127.0.0.1 - - [18/Nov/2025 11:14:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 11:14:05,859 INFO: 127.0.0.1 - - [18/Nov/2025 11:14:05] "GET / HTTP/1.1" 200 -
+2025-11-18 11:14:05,925 INFO: 127.0.0.1 - - [18/Nov/2025 11:14:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 11:14:37,984 INFO: 127.0.0.1 - - [18/Nov/2025 11:14:37] "GET /dashboard HTTP/1.1" 200 -
+2025-11-18 11:14:38,146 INFO: 127.0.0.1 - - [18/Nov/2025 11:14:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 11:14:45,288 INFO: 127.0.0.1 - - [18/Nov/2025 11:14:45] "GET / HTTP/1.1" 200 -
+2025-11-18 11:14:45,419 INFO: 127.0.0.1 - - [18/Nov/2025 11:14:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 11:14:51,961 INFO: 127.0.0.1 - - [18/Nov/2025 11:14:51] "GET /dashboard HTTP/1.1" 200 -
+2025-11-18 11:14:52,136 INFO: 127.0.0.1 - - [18/Nov/2025 11:14:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 11:14:58,423 INFO: 127.0.0.1 - - [18/Nov/2025 11:14:58] "GET /analysis HTTP/1.1" 200 -
+2025-11-18 11:14:58,555 INFO: 127.0.0.1 - - [18/Nov/2025 11:14:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-18 11:15:23,622 INFO: 127.0.0.1 - - [18/Nov/2025 11:15:23] "POST /analysis HTTP/1.1" 200 -
+2025-11-18 11:15:25,405 INFO: 127.0.0.1 - - [18/Nov/2025 11:15:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-19 08:12:23,768 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-19 08:12:23,769 INFO: [33mPress CTRL+C to quit[0m
+2025-11-19 08:12:29,186 INFO: 127.0.0.1 - - [19/Nov/2025 08:12:29] "GET / HTTP/1.1" 200 -
+2025-11-19 08:12:29,465 INFO: 127.0.0.1 - - [19/Nov/2025 08:12:29] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-11-19 08:12:33,176 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:12:33,177 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:12:33,298 INFO: 127.0.0.1 - - [19/Nov/2025 08:12:33] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-19 08:12:39,189 INFO: 127.0.0.1 - - [19/Nov/2025 08:12:39] "GET /dashboard HTTP/1.1" 200 -
+2025-11-19 08:12:39,304 INFO: 127.0.0.1 - - [19/Nov/2025 08:12:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-19 08:12:39,708 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:12:39,709 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:12:39,710 INFO: 127.0.0.1 - - [19/Nov/2025 08:12:39] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-19 08:12:45,678 INFO: 127.0.0.1 - - [19/Nov/2025 08:12:45] "GET /about HTTP/1.1" 200 -
+2025-11-19 08:12:45,777 INFO: 127.0.0.1 - - [19/Nov/2025 08:12:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-19 08:12:46,640 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:12:46,641 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:12:46,642 INFO: 127.0.0.1 - - [19/Nov/2025 08:12:46] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-19 08:12:50,055 INFO: 127.0.0.1 - - [19/Nov/2025 08:12:50] "GET /analysis HTTP/1.1" 200 -
+2025-11-19 08:12:50,211 INFO: 127.0.0.1 - - [19/Nov/2025 08:12:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-19 08:12:50,563 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:12:50,564 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:12:50,566 INFO: 127.0.0.1 - - [19/Nov/2025 08:12:50] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-19 08:13:37,758 INFO: 127.0.0.1 - - [19/Nov/2025 08:13:37] "POST /analysis HTTP/1.1" 200 -
+2025-11-19 08:13:37,849 INFO: 127.0.0.1 - - [19/Nov/2025 08:13:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-19 08:13:38,260 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:13:38,261 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:13:38,262 INFO: 127.0.0.1 - - [19/Nov/2025 08:13:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-19 08:13:58,195 INFO: 127.0.0.1 - - [19/Nov/2025 08:13:58] "POST /analysis HTTP/1.1" 200 -
+2025-11-19 08:13:58,309 INFO: 127.0.0.1 - - [19/Nov/2025 08:13:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-19 08:13:58,751 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:13:58,752 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:13:58,753 INFO: 127.0.0.1 - - [19/Nov/2025 08:13:58] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-19 08:14:22,082 INFO: 127.0.0.1 - - [19/Nov/2025 08:14:22] "GET /dashboard HTTP/1.1" 200 -
+2025-11-19 08:14:22,216 INFO: 127.0.0.1 - - [19/Nov/2025 08:14:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-19 08:14:22,525 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:14:22,526 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:14:22,528 INFO: 127.0.0.1 - - [19/Nov/2025 08:14:22] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-19 08:14:27,767 INFO: 127.0.0.1 - - [19/Nov/2025 08:14:27] "GET / HTTP/1.1" 200 -
+2025-11-19 08:14:27,884 INFO: 127.0.0.1 - - [19/Nov/2025 08:14:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-19 08:14:28,220 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:14:28,221 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:14:28,222 INFO: 127.0.0.1 - - [19/Nov/2025 08:14:28] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-19 08:14:37,066 INFO: 127.0.0.1 - - [19/Nov/2025 08:14:37] "GET /analysis HTTP/1.1" 200 -
+2025-11-19 08:14:37,191 INFO: 127.0.0.1 - - [19/Nov/2025 08:14:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-19 08:14:37,488 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:14:37,489 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:14:37,490 INFO: 127.0.0.1 - - [19/Nov/2025 08:14:37] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-19 08:14:40,829 INFO: 127.0.0.1 - - [19/Nov/2025 08:14:40] "GET /about HTTP/1.1" 200 -
+2025-11-19 08:14:40,944 INFO: 127.0.0.1 - - [19/Nov/2025 08:14:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-19 08:14:41,232 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:14:41,233 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:14:41,235 INFO: 127.0.0.1 - - [19/Nov/2025 08:14:41] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-19 08:15:09,950 INFO: 127.0.0.1 - - [19/Nov/2025 08:15:09] "GET / HTTP/1.1" 200 -
+2025-11-19 08:15:10,059 INFO: 127.0.0.1 - - [19/Nov/2025 08:15:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-19 08:15:10,372 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:15:10,373 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-19 08:15:10,375 INFO: 127.0.0.1 - - [19/Nov/2025 08:15:10] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -

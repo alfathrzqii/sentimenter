@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sentimenter{% endblock %} - Analisis Sentimen</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Loading Spinner Overlay -->
+    <div id="spinner-overlay" class="spinner-overlay hidden">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="{{ url_for('home') }}" class="navbar-brand">
+            <i class="fas fa-brain" style="color: #3498db;"></i> Sentimenter
+        </a>
+        
+        <button class="hamburger-btn" id="hamburger-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <ul class="navbar-nav" id="navbar-nav">
+            <!-- Logic to highlight active page -->
+            <li><a href="{{ url_for('home') }}" class="{{ 'active' if request.endpoint == 'home' else '' }}">Home</a></li>
+            <li><a href="{{ url_for('dashboard') }}" class="{{ 'active' if request.endpoint == 'dashboard' else '' }}">Dashboard</a></li>
+            <li><a href="{{ url_for('analysis') }}" class="{{ 'active' if request.endpoint == 'analysis' else '' }}">Analisis</a></li>
+            <li><a href="{{ url_for('about') }}" class="{{ 'active' if request.endpoint == 'about' else '' }}">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <!-- Page Header -->
+        <div style="margin-bottom: 2rem; text-align: center;">
+            <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">{% block page_title %}{% endblock %}</h1>
+            <div style="height: 4px; width: 60px; background: var(--primary-gradient); margin: 0 auto; border-radius: 2px;"></div>
+        </div>
+        
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navbarNav = document.getElementById('navbar-nav');
+        
+        hamburgerBtn.addEventListener('click', () => {
+            navbarNav.classList.toggle('active');
+        });
+
+        // Alert Close Logic
+        document.body.addEventListener('click', (e) => {
+            if(e.target.classList.contains('alert-close')) {
+                e.target.closest('.alert').style.display = 'none';
+            }
+        });
+
+        // Global Spinner Helper
+        window.showSpinner = () => {
+            document.getElementById('spinner-overlay').classList.remove('hidden');
+        };
+        window.hideSpinner = () => {
+            document.getElementById('spinner-overlay').classList.add('hidden');
+        };
+    </script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
