@@ -35,6 +35,10 @@ Menampilkan DataFrame hasil analisis langsung di halaman aplikasi.
 ```
 /sentimenter
 │
+├── /static/
+│   ├── /css/
+│   ├── /images/
+│
 ├── /uploads/             # Folder otomatis untuk file upload sementara
 │
 ├── /templates/
