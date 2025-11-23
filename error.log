@@ -3568,3 +3568,612 @@ werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on 
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
 
 2025-11-23 15:43:59,387 INFO: 127.0.0.1 - - [23/Nov/2025 15:43:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:52:34,718 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-23 15:52:34,719 INFO: [33mPress CTRL+C to quit[0m
+2025-11-23 15:52:43,272 INFO: 127.0.0.1 - - [23/Nov/2025 15:52:43] "GET / HTTP/1.1" 200 -
+2025-11-23 15:52:43,517 INFO: 127.0.0.1 - - [23/Nov/2025 15:52:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:52:44,217 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:52:44,218 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:52:44,232 INFO: 127.0.0.1 - - [23/Nov/2025 15:52:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:52:46,756 INFO: 127.0.0.1 - - [23/Nov/2025 15:52:46] "GET /analysis HTTP/1.1" 200 -
+2025-11-23 15:52:46,842 INFO: 127.0.0.1 - - [23/Nov/2025 15:52:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:52:47,024 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:52:47,025 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:52:47,026 INFO: 127.0.0.1 - - [23/Nov/2025 15:52:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:52:57,817 INFO: 127.0.0.1 - - [23/Nov/2025 15:52:57] "[32mPOST /analysis HTTP/1.1[0m" 302 -
+2025-11-23 15:52:57,828 INFO: 127.0.0.1 - - [23/Nov/2025 15:52:57] "GET /analysis HTTP/1.1" 200 -
+2025-11-23 15:52:57,881 INFO: 127.0.0.1 - - [23/Nov/2025 15:52:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:52:58,044 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:52:58,045 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:52:58,046 INFO: 127.0.0.1 - - [23/Nov/2025 15:52:58] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:53:32,413 INFO: 127.0.0.1 - - [23/Nov/2025 15:53:32] "[32mPOST /analysis HTTP/1.1[0m" 302 -
+2025-11-23 15:53:32,423 INFO: 127.0.0.1 - - [23/Nov/2025 15:53:32] "GET /analysis HTTP/1.1" 200 -
+2025-11-23 15:53:32,509 INFO: 127.0.0.1 - - [23/Nov/2025 15:53:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:53:32,745 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:53:32,746 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:53:32,747 INFO: 127.0.0.1 - - [23/Nov/2025 15:53:32] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:53:50,393 INFO: 127.0.0.1 - - [23/Nov/2025 15:53:50] "[32mPOST /analysis HTTP/1.1[0m" 302 -
+2025-11-23 15:53:50,400 INFO: 127.0.0.1 - - [23/Nov/2025 15:53:50] "GET /analysis HTTP/1.1" 200 -
+2025-11-23 15:53:50,453 INFO: 127.0.0.1 - - [23/Nov/2025 15:53:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:53:50,636 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:53:50,636 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:53:50,637 INFO: 127.0.0.1 - - [23/Nov/2025 15:53:50] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:53:58,898 INFO: 127.0.0.1 - - [23/Nov/2025 15:53:58] "[32mPOST /analysis HTTP/1.1[0m" 302 -
+2025-11-23 15:53:58,906 INFO: 127.0.0.1 - - [23/Nov/2025 15:53:58] "GET /analysis HTTP/1.1" 200 -
+2025-11-23 15:53:58,960 INFO: 127.0.0.1 - - [23/Nov/2025 15:53:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:53:59,131 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:53:59,132 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:53:59,133 INFO: 127.0.0.1 - - [23/Nov/2025 15:53:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:54:54,066 INFO: 127.0.0.1 - - [23/Nov/2025 15:54:54] "[32mPOST /analysis HTTP/1.1[0m" 302 -
+2025-11-23 15:54:54,084 INFO: 127.0.0.1 - - [23/Nov/2025 15:54:54] "GET /analysis HTTP/1.1" 200 -
+2025-11-23 15:54:54,155 INFO: 127.0.0.1 - - [23/Nov/2025 15:54:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:54:54,402 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:54:54,403 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:54:54,404 INFO: 127.0.0.1 - - [23/Nov/2025 15:54:54] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:57:52,784 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-23 15:57:52,784 INFO: [33mPress CTRL+C to quit[0m
+2025-11-23 15:57:57,111 INFO: 127.0.0.1 - - [23/Nov/2025 15:57:57] "GET / HTTP/1.1" 200 -
+2025-11-23 15:57:57,272 INFO: 127.0.0.1 - - [23/Nov/2025 15:57:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:57:58,016 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:57:58,017 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:57:58,030 INFO: 127.0.0.1 - - [23/Nov/2025 15:57:58] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:58:00,098 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:00] "GET /analysis HTTP/1.1" 200 -
+2025-11-23 15:58:00,208 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:58:00,471 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:58:00,471 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:58:00,472 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:00] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:58:13,797 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:13] "[32mPOST /analysis HTTP/1.1[0m" 302 -
+2025-11-23 15:58:13,805 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:13] "GET /analysis HTTP/1.1" 200 -
+2025-11-23 15:58:13,857 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:58:14,032 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:58:14,033 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:58:14,034 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:14] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:58:33,562 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:33] "POST /analysis HTTP/1.1" 200 -
+2025-11-23 15:58:33,703 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:58:33,853 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:58:33,854 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:58:33,855 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:33] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:58:44,236 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:44] "POST /analysis HTTP/1.1" 200 -
+2025-11-23 15:58:44,301 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:58:44,523 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:58:44,524 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:58:44,525 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:58:51,981 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:51] "POST /analysis HTTP/1.1" 200 -
+2025-11-23 15:58:52,082 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:58:52,264 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:58:52,264 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:58:52,266 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:52] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:58:58,737 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:58] "POST /analysis HTTP/1.1" 200 -
+2025-11-23 15:58:58,795 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:58:58,995 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:58:58,996 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:58:58,996 INFO: 127.0.0.1 - - [23/Nov/2025 15:58:58] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 15:59:04,586 INFO: 127.0.0.1 - - [23/Nov/2025 15:59:04] "POST /analysis HTTP/1.1" 200 -
+2025-11-23 15:59:04,668 INFO: 127.0.0.1 - - [23/Nov/2025 15:59:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 15:59:04,813 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:59:04,813 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 15:59:04,814 INFO: 127.0.0.1 - - [23/Nov/2025 15:59:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 16:00:31,286 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-23 16:00:31,287 INFO: [33mPress CTRL+C to quit[0m
+2025-11-23 16:00:37,014 INFO: 127.0.0.1 - - [23/Nov/2025 16:00:37] "GET / HTTP/1.1" 200 -
+2025-11-23 16:00:37,152 INFO: 127.0.0.1 - - [23/Nov/2025 16:00:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 16:00:37,822 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 16:00:37,823 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 16:00:37,836 INFO: 127.0.0.1 - - [23/Nov/2025 16:00:37] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 16:00:39,637 INFO: 127.0.0.1 - - [23/Nov/2025 16:00:39] "GET /analysis HTTP/1.1" 200 -
+2025-11-23 16:00:39,781 INFO: 127.0.0.1 - - [23/Nov/2025 16:00:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 16:00:39,922 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 16:00:39,923 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 16:00:39,924 INFO: 127.0.0.1 - - [23/Nov/2025 16:00:39] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-11-23 16:02:53,625 INFO: 127.0.0.1 - - [23/Nov/2025 16:02:53] "POST /analysis HTTP/1.1" 200 -
+2025-11-23 16:02:53,722 INFO: 127.0.0.1 - - [23/Nov/2025 16:02:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-23 16:02:54,599 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 16:02:54,601 ERROR: Traceback (most recent call last):
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\MyBook Hype AMD\Documents\sentimenter\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-11-23 16:02:54,602 INFO: 127.0.0.1 - - [23/Nov/2025 16:02:54] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -

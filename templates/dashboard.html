@@ -2,45 +2,141 @@
 
 {% block title %}Dashboard Sentimen{% endblock %}
 
-<!-- TAMBAHKAN BLOCK INI untuk mengisi H1 yang sudah diperbaiki -->
-{% block page_title %}Dashboard Sentimen{% endblock %}
+{% block page_title %}DASHBOARD SENTIMEN{% endblock %}
 
 {% block content %}
-    <p style="font-size: 1.1em; margin-top: -1rem; margin-bottom: 2rem;">
-        Halaman ini menampilkan contoh visualisasi sentimen untuk beberapa topik populer (data dummy).
+    <p style="font-size: 1.1em; margin-top: -1rem; margin-bottom: 2rem; font-weight: 500;">
+        Analisis sentimen terkini mengenai topik-topik hangat di Indonesia.
     </p>
 
-    <div class="dummy-analysis-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-        
-        {% for key, data in dummy_charts.items() %}
-        <div class="card">
-            <!-- Hapus padding bawaan dari .card untuk style header ini -->
-            <div style="padding: 20px; background-color: #f9f9f9; border-bottom: 1px solid var(--border-color); margin: -30px -30px 20px -30px; border-radius: 10px 10px 0 0;">
-                <h2 style="margin: 0; padding: 0; border: none; font-size: 1.3rem;">{{ data.title }}</h2>
-            </div>
-            
-            <p>Visualisasi sentimen untuk topik ini akan ditampilkan di sini.</p>
-            
-            <!-- Placeholder untuk Gambar -->
-            <div class="chart-placeholder" style="
-                background-color: #e9ecef; 
-                height: 200px; 
-                margin-bottom: 15px; 
-                display: flex; 
-                align-items: center; 
-                justify-content: center; 
-                color: #6c757d; 
-                font-style: italic;
-                border-radius: var(--border-radius-sm);
-            ">
-                Grafik Sentimen Placeholder
+    <div id="dashboard-container">
+        <!-- Loop data dari Flask -->
+        {% for key, data in dashboard_data.items() %}
+        <div class="card" style="border-width: 4px; box-shadow: 8px 8px 0px #000;">
+            <div style="background-color: var(--primary-color); border-bottom: 4px solid #000; padding: 15px; margin: -30px -30px 20px -30px;">
+                <h2 style="margin: 0; border: none; font-size: 1.5rem; padding: 0; background: none;">{{ data.title }}</h2>
             </div>
 
-            <p style="font-size: 0.9em; color: #777; margin-bottom: 0;">
-                Data ini adalah contoh. Untuk analisis real-time, kunjungi halaman <a href="{{ url_for('analysis') }}">Analisis</a>.
-            </p>
+            <div class="charts-grid" style="margin-top: 30px;">
+                <!-- Bar Chart Container -->
+                <div class="chart-box">
+                    <h3>Distribusi</h3>
+                    <canvas id="bar-{{ key }}"></canvas>
+                </div>
+
+                <!-- Pie Chart Container -->
+                <div class="chart-box">
+                    <h3>Proporsi</h3>
+                    <div style="position: relative; max-height: 300px; margin: auto;">
+                        <canvas id="pie-{{ key }}"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Word Cloud Image Section -->
+            <div class="chart-box" style="width: 100%; margin-top: 30px; border: 3px solid #000;">
+                <h3>Word Cloud</h3>
+                <!-- Menggunakan url_for static -->
+                <img src="{{ url_for('static', filename='images/' + data.image) }}" 
+                     alt="Word Cloud {{ data.title }}" 
+                     style="max-width: 100%; height: auto; display: block; margin: 0 auto;"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                
+                <!-- Fallback jika gambar tidak ditemukan -->
+                <div style="display: none; padding: 40px; color: #666;">
+                    <i class="fas fa-image" style="font-size: 3rem; margin-bottom: 10px;"></i><br>
+                    Simpan file <strong>{{ data.image }}</strong> di folder <code>static/images/</code>
+                </div>
+            </div>
         </div>
         {% endfor %}
-
     </div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 1. Ambil data lengkap dari Flask
+        const dashboardData = {{ dashboard_data | tojson }};
+
+        // Konfigurasi Font & Warna Neo-Brutalism
+        Chart.defaults.font.family = "'Space Grotesk', sans-serif";
+        Chart.defaults.color = '#000';
+        
+        const bgColors = ['#00E676', '#d1d1d1', '#FF5252']; // Hijau, Abu, Merah
+        const borderColors = '#000000';
+        const borderWidth = 3;
+
+        // 2. Loop setiap topik (IKN, Whoosh)
+        for (const [key, item] of Object.entries(dashboardData)) {
+            const counts = item.counts;
+            const labels = ['Positif', 'Netral', 'Negatif'];
+            const dataValues = [
+                counts['Positif'] || 0,
+                counts['Netral'] || 0,
+                counts['Negatif'] || 0
+            ];
+
+            // Render Bar Chart
+            const barCtx = document.getElementById(`bar-${key}`);
+            if (barCtx) {
+                new Chart(barCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Jumlah',
+                            data: dataValues,
+                            backgroundColor: bgColors,
+                            borderColor: borderColors,
+                            borderWidth: borderWidth
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                grid: { color: '#000', lineWidth: 1 },
+                                ticks: { color: '#000', font: { weight: 'bold' } }
+                            },
+                            x: {
+                                grid: { display: false },
+                                ticks: { color: '#000', font: { weight: 'bold' } }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Render Pie Chart
+            const pieCtx = document.getElementById(`pie-${key}`);
+            if (pieCtx) {
+                new Chart(pieCtx, {
+                    type: 'pie',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            data: dataValues,
+                            backgroundColor: bgColors,
+                            borderColor: borderColors,
+                            borderWidth: borderWidth
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: { color: '#000', font: { weight: 'bold' } }
+                            }
+                        }
+                    }
+                });
+            }
+        }
+    });
+</script>
 {% endblock %}

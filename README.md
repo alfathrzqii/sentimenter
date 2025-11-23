@@ -99,5 +99,3 @@ http://127.0.0.1:5000
 ```
 
 ---
-
-Jika ingin ditambahkan **badge**, **gambar**, atau **contoh output**, tinggal bilang! 🚀

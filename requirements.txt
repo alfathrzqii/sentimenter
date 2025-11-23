@@ -1,9 +1,1 @@
-flask
-torch
-transformers
-pandas
-matplotlib
-openpyxl
-werkzeug
-wordcloud
-gunicorn
+flask torch transformers pandas matplotlib openpyxl werkzeug wordcloud gunicorn
