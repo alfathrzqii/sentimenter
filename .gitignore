@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv
+venv
+ENV
+env
+
+# Logs
+*.log
+
+# Uploads and temporary files
+uploads/*
+!uploads/.gitkeep
+
+# Local environment files
+.env
+.flaskenv

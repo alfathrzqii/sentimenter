@@ -98,6 +98,18 @@
                 </div>
                 {% endif %}
 
+                <div class="download-section" style="margin-top: 2rem; margin-bottom: 2rem;">
+                    <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Download Hasil</h2>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="{{ url_for('download_file', filename=csv_file) }}" class="btn btn-primary">
+                            <i class="fas fa-file-csv"></i> Download CSV
+                        </a>
+                        <a href="{{ url_for('download_file', filename=xlsx_file) }}" class="btn btn-success">
+                            <i class="fas fa-file-excel"></i> Download XLSX
+                        </a>
+                    </div>
+                </div>
+
                 <h2 style="font-size: 1.5rem; margin-top: 2rem;">Data Tabel</h2>
                 <div class="table-responsive">
                     {{ results_table|safe }}
